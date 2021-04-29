@@ -322,7 +322,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 1200px) {
   .splide__arrow {
-    margin: 300px -7rem 0 -7rem;
+    margin: 350px 7rem 0 7rem;
   }
 }
 .splide__arrow:hover {
