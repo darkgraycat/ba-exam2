@@ -325,6 +325,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 300px -7rem 0 -7rem;
   }
 }
+.splide__arrow:hover {
+  background-color: #fff;
+  fill: #23cbf9;
+}
 
 .splide__pagination {
   flex-direction: row !important;
