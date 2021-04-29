@@ -117,7 +117,7 @@ window.onload = () => {
   }).addTo(map);
 
   const marker = L.icon({
-    iconUrl: '../img/marker.svg',
+    iconUrl: './img/marker.svg',
     iconSize: [106, 106],
   })
 

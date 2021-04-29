@@ -230,7 +230,7 @@ h1,h2,h3,h4,h5,h6 {margin: 10px 0}
 
 // components 
 .logo {
-  @include bgimg('logo.svg');
+  @include bgimg('main_logo.svg');
   width: 250px;
   height: 50px;
   margin: 5px;
