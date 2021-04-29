@@ -50,9 +50,10 @@ window.onload = () => {
     const scroll = window.scrollY
     const gap = document.documentElement.clientHeight / 2
     for (let i = 0; i < heights.length; i++) {
-      ((i - 1) % 2)
+      (i == 2 || i == 4 || i == 5)
         ? navDots.forEach(el => el.classList.add('nav__btn_dark'))
         : navDots.forEach(el => el.classList.remove('nav__btn_dark'))
+
 
       navDots.forEach(el => el.classList.remove('nav__btn_active'))
 
