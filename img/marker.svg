@@ -1,0 +1,20 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106 106" width="106" height="106">
+	<title>CONTACT</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { opacity: 0.302;fill: #ffffff } 
+		.shp1 { opacity: 0.8;fill: #ffffff } 
+		.shp2 { fill: #7e5aff } 
+	</style>
+	<g id="CONTACT">
+		<g id="Map" style="opacity: 0.902">
+			<g id="Pin">
+				<g id="Pin">
+					<path id="Ellipse 11" class="shp0" d="M53 0C82.27 0 106 23.73 106 53C106 82.27 82.27 106 53 106C23.73 106 0 82.27 0 53C0 23.73 23.73 0 53 0Z" />
+					<path id="Ellipse 11" class="shp1" d="M53 18C72.33 18 88 33.67 88 53C88 72.33 72.33 88 53 88C33.67 88 18 72.33 18 53C18 33.67 33.67 18 53 18Z" />
+					<path id="Ellipse 11" class="shp2" d="M53 45C57.42 45 61 48.58 61 53C61 57.42 57.42 61 53 61C48.58 61 45 57.42 45 53C45 48.58 48.58 45 53 45Z" />
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <script src="https://kit.fontawesome.com/9d1b4e88c5.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="./js/index.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <header>
+    <div class="menuicon">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav class="navbar">
+
+      <div class="logo"></div>
+      <ul class="navbar__list">
+        <li class="navbar__list-item">
+          <a href="javascript:void(0)" class="nav__btn" id="btnAbout">About us</a>
+        </li>
+        <li class="navbar__list-item">
+          <a href="javascript:void(0)" class="nav__btn" id="btnProjects">Projects</a>
+        </li>
+        <li class="navbar__list-item">
+          <a href="javascript:void(0)" class="nav__btn" id="btnNews">News</a>
+        </li>
+        <li class="navbar__list-item">
+          <a href="javascript:void(0)" class="nav__btn" id="btnContact">Contact</a>
+        </li>
+      </ul>
+      <div class="navbar__social">
+        <button class="btn btn-round"><i class="fab fa-facebook-f"></i></button>
+        <button class="btn btn-round"><i class="fab fa-twitter"></i></button>
+        <button class="btn btn-round"><i class="fab fa-instagram"></i></button>
+      </div>
+    </nav>
+
+    <div class="marker" id="marker-header"></div>
+    <section class="section__header">
+      <div>
+        <h1 class="t80 bold">Simple & modern</h1>
+        <h2 class="t18 book">We make the world's beautiful every day</h2>
+      </div>
+      <button class="btn btn-round" id="btnDown">
+        <i class="fas fa-chevron-down"></i>
+      </button>
+    </section>
+
+    <nav class="nav-side">
+      <a href="javascript:void(0)" class="nav__btn nav__btn_active"></a>
+      <a href="javascript:void(0)" class="nav__btn"></a>
+      <a href="javascript:void(0)" class="nav__btn"></a>
+      <a href="javascript:void(0)" class="nav__btn"></a>
+      <a href="javascript:void(0)" class="nav__btn"></a>
+    </nav>
+
+  </header>
+
+
+
+  <main>
+
+    <div class="marker" id="marker-projects"></div>
+    <section class="section__projects">
+      <h2 class="title">What we do</h2>
+
+      <div class="card">
+        <div class="card__img card__bgl"></div>
+        <div class="card__content">
+          <div>
+            <h4 class="t22 ttu book dark">One world</h4>
+            <h3 class="t40 ttu bold dark">Trade center</h3>
+          </div>
+          <p class="t18 reg semi lh30">
+            Increasing prosperity in our lives can be accomplished by having the right frame of mind.
+            The truth is,
+            our thoughts are very powerful.
+          </p>
+          <button class="btn">More details</button>
+          <div class="mt20 t18 dark">
+            <i class="fas fa-map-marker-alt"></i>
+            <i class="reg">New York City, United States - 1776 feet</i>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card__img card__bgr"></div>
+        <div class="card__content">
+          <div>
+            <h4 class="t22 ttu book dark">International</h4>
+            <h3 class="t40 ttu bold dark">Commerce Centre</h3>
+          </div>
+          <p class="t18 reg semi lh30">
+            Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a
+            digital advertising network may help.
+          </p>
+          <button class="btn">More details</button>
+          <div class="mt20 t18 dark">
+            <i class="fas fa-map-marker-alt"></i>
+            <i class="reg">Hong Kong - 1588 feet</i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="marker" id="marker-news"></div>
+    <section class="section__news">
+      <h2 class="title light">Latest news</h2>
+      <div class="slider splide">
+
+        <div class="splide__track">
+
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="card card_1">
+                <div class="card__img"></div>
+                <div class="card__content">
+                  <h3 class="t22 ttu book dark">See The Unmatched Beauty Of The Great. </h3>
+                  <p class="t18 txt dark">
+                    Free directories: directories are perfect for customers that are...
+                  </p>
+                  <div class="author">
+                    <div class="author__avatar"></div>
+                    <div>
+                      <div class="author__name">ISAAC DUNN</div>
+                      <div class="author__date">09 Feb 2017</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="card card_2">
+                <div class="card__img"></div>
+                <div class="card__content">
+                  <h3 class="t22 ttu book dark">Effective Advertising Pointers. </h3>
+                  <p class="t18 txt dark">
+                    Having a home based business is a wonderful asset to your life...
+                  </p>
+                  <div class="author">
+                    <div class="author__avatar"></div>
+                    <div>
+                      <div class="author__name">DOMINIC FREEMAN</div>
+                      <div class="author__date">24 Apr 2017</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="card card_3">
+                <div class="card__img"></div>
+                <div class="card__content">
+                  <h3 class="t22 ttu book dark">Hypnotize Yourself Into The Ghost. </h3>
+                  <p class="t18 txt dark">
+                    There are many things that are important to catalog design....
+                  </p>
+                  <div class="author">
+                    <div class="author__avatar"></div>
+                    <div>
+                      <div class="author__name">ALICE WARD</div>
+                      <div class="author__date">30 Dev 2017</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="section__gallery">
+      <div class="marker" id="marker-gallery"></div>
+      <h3 class="title dark">Gallery</h3>
+      <div class="gallery frow fwrap">
+        <div class="frow">
+          <div id="gal-1" class="gallery__bimg"></div>
+        </div>
+        <div class="fcol">
+          <div class="frow">
+            <div id="gal-2" class="gallery__img"></div>
+            <div id="gal-3" class="gallery__img"></div>
+          </div>
+          <div class="frow">
+            <div id="gal-4" class="gallery__img"></div>
+            <div id="gal-5" class="gallery__img"></div>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn">See more</button>
+    </section>
+
+
+    <section class="section__contact">
+      <div class="contact__map" id="map"></div>
+      <div class="contact__form form fcol">
+        <div class="marker" id="marker-contact"></div>
+        <h3 class="title dark">Get in touch</h3>
+        <div class="frow fwrap fcenter">
+          <div class="fcol t18 reg semi">
+            <div>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>91 Nolan Extensions Suite 670</span>
+            </div>
+            <div>
+              <i class="fas fa-phone-alt"></i>
+              <span>+001 356-868-2454</span>
+            </div>
+            <div>
+              <i class="fas fa-inbox"></i>
+              <span>gahuy93@gmail.com</span>
+            </div>
+            <div>
+              <i class="far fa-clock"></i>
+              <span>From 07:05AM to 19:30PM</span>
+            </div>
+          </div>
+          <div class="fcol t18 reg semi">
+            <input class="txtinput semi" type="text" placeholder="Name">
+            <input class="txtinput semi" type="email" placeholder="Email">
+            <button class="btn">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="marker" id="marker-footer"></div>
+      <div class="fcol">
+        <div class="logo"></div>
+        <p class="t18 txt light">
+          <span>
+            Copyrights &copy; 2017 Monticello
+          </span>
+          <span class="divider">|</span>
+          <span>
+            Made with <span class="t22">&hearts;</span> by Ga Huy
+          </span>
+        </p>
+      </div>
+      <div class="frow">
+        <button class="btn btn-round"><i class="fab fa-facebook-f"></i></button>
+        <button class="btn btn-round"><i class="fab fa-twitter"></i></button>
+        <button class="btn btn-round"><i class="fab fa-instagram"></i></button>
+      </div>
+    </div>
+    <!-- footer -->
+  </footer>
+</body>
+
+</html>
