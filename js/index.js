@@ -45,7 +45,6 @@ window.onload = () => {
   //[0, 800, 2400, 4192, 5546, 7154.5]
   //[0, 800, 2400, 4192, 5546, 7154.5]
 
-  console.log(heights)
 
   document.addEventListener('scroll', e => {
     const scroll = window.scrollY
@@ -72,10 +71,22 @@ window.onload = () => {
   })
 
   document.querySelector('#btnDown').addEventListener('click', () => smoothScrollTo(heights[1]))
-  document.querySelector('#btnAbout').addEventListener('click', () => { smoothScrollTo(heights[0]); showMenu(false) })
-  document.querySelector('#btnProjects').addEventListener('click', () => { smoothScrollTo(heights[1]); showMenu(false) })
-  document.querySelector('#btnNews').addEventListener('click', () => { smoothScrollTo(heights[2]); showMenu(false) })
-  document.querySelector('#btnContact').addEventListener('click', () => { smoothScrollTo(heights[4]); showMenu(false) })
+  document.querySelector('#btnAbout').addEventListener('click', () => {
+    smoothScrollTo(heights[0])
+    if (burger.classList.contains('menuicon-active')) showMenu(false)
+  })
+  document.querySelector('#btnProjects').addEventListener('click', () => {
+    smoothScrollTo(heights[1])
+    if (burger.classList.contains('menuicon-active')) showMenu(false)
+  })
+  document.querySelector('#btnNews').addEventListener('click', () => {
+    smoothScrollTo(heights[2])
+    if (burger.classList.contains('menuicon-active')) showMenu(false)
+  })
+  document.querySelector('#btnContact').addEventListener('click', () => {
+    smoothScrollTo(heights[4])
+    if (burger.classList.contains('menuicon-active')) showMenu(false)
+  })
 
 
   // native
